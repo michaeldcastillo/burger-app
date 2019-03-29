@@ -1,0 +1,78 @@
+
+
+
+<div class="container" style="border:1px solid red;">
+
+   
+
+
+    <div>
+
+        <h1>Welcome to The ATX Burger Buffet</h1>
+
+        <p style="font-style:italic;">A place where you can consume as many burgers as you like without suffering any of the consequences. I'll eat to that!</p>
+        
+        <p>Austin, Texas, known for it's art and music scene is also home to many tasty varieties of hamburger. Whether it's classic burger joints like Hut's Hamburgers, Top Notch, and Dan's Hamburgers or gourmet spots like Hopdoddy Burger Bar, Second Bar + Kitchen, and Justine's Brasserie or even fast-food favorities like Whataburger, P.Terry's Burger Stand, Five Guys, and Mighty Fine Burgers Fries & Shakes, there's a burger in the ATX for every appetite. Bon Appétit.</p>
+    
+
+        <h2 style="text-align:center;">Create Your Own Burger</h2>
+
+        <form class="create-form">
+
+        <div class="form-group">
+        <!-- <label for="burg">Custom Burger:</label> -->
+            <input type="text" id="burg" name="name" placeholder="Type your favorite burger here...">
+        </div>
+
+        <!-- <div class="form-group">
+            <label for="devoured">Devoured?</label><br>
+            <input type="radio" name="devoured" value="1" checked> Devoured (1/true).<br>
+            <input type="radio" name="devoured" value="0"> Not Devoured (0/false).
+        </div> -->
+
+        <button type="submit" class="add-burger">Add Burger!</button>
+        </form>
+       
+
+    </div>
+
+<!-- =========================================== -->
+
+    <div class="row">
+
+    <div class="column">
+        <h2>Burger Menu</h2>
+        <!-- <p>Here are a few "hometown heroes". Try one...or three!</p> -->
+        <ul>
+            {{#each burgers}}
+                {{#unless devoured}}                
+                    <p><button class="change-devour" data-id="{{id}}" data-newdevour="true">Devour It!</button> {{burger_name}}</p>
+                <!-- <p>Devoured?: {{devoured}}</p> -->   
+                {{/unless}}
+            {{/each}}
+        </ul>
+    </div>
+
+    <div class="column">
+        <h2>Burgers You've Consumed</h2>
+    <!-- <p>Some text..</p> -->
+        <ul>
+            {{#each burgers}}
+                {{#if devoured}}
+                    <p>{{burger_name}}</p>
+                <!--  <p>Devoured?: {{devoured}}</p> -->
+                {{/if}}
+            {{/each}}        
+        </ul>
+    </div>
+
+    </div>
+
+
+
+   
+
+</div>
+
+
+
