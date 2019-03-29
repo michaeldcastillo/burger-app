@@ -6,8 +6,8 @@ This project is intended to demonstrate a basic Create Read Update Delete (CRUD)
 
 Technologies used in this app include the following:
 
-* JavaScript - As a "back-end" programming language
-* Node.js - JavaScript runtime providing the app's execution environment and command line interface
+* JavaScript - As a "full-stack" programming language (w/jQuery library)
+* Node.js - JavaScript runtime
 * mysql (package) - Node package used to interface with the database
 * MySQL (database) - Relational Database Management System (RDMS) administered using MySQL Workbench
 * Express.js (package) - Node package used to create a web server
@@ -23,7 +23,7 @@ Technologies used in this app include the following:
 
 ### GitHub Repository
 
-* https://github.com/michaeldcastillo/bamazon-node-app
+* https://github.com/michaeldcastillo/burger-app
 
 
 
