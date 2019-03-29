@@ -7,6 +7,7 @@ This project is intended to demonstrate a basic Create Read Update Delete (CRUD)
 Technologies used in this app include the following:
 
 * JavaScript - As a "full-stack" programming language (w/jQuery library)
+* Handlebars.js - Node package used for HTML templating 
 * Node.js - JavaScript runtime
 * mysql (package) - Node package used to interface with the database
 * MySQL (database) - Relational Database Management System (RDMS) administered using MySQL Workbench
@@ -15,7 +16,7 @@ Technologies used in this app include the following:
 
 ### Accessing the Application
 
-* ???
+* https://safe-shore-16278.herokuapp.com/
 
 ### User Experience Assumptions
 
