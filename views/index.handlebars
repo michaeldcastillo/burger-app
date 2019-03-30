@@ -54,11 +54,11 @@
     </div>
 
     <div class="column-right">
-        <h2 id="title-right">Burgers You've Consumed</h2>
+        <h2 id="title-right">Burgers Consumed</h2>
         <ul>
             {{#each burgers}}
                 {{#if devoured}}
-                    <img id="emoji" src="assets/img/yum-60x60.png"><p id="consumed">{{burger_name}}</p>
+                   <span style="white-space: nowrap;"><img id="emoji" src="assets/img/yum-60x60.png">&nbsp;<p id="consumed">{{burger_name}}</p></span>
                 <!--  <p>Devoured?: {{devoured}}</p> -->
                 {{/if}}
             {{/each}}        
